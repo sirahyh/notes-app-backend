@@ -41,7 +41,7 @@ const getNoteHandler = () => ({
 })
 
 const getDetailNote = (request, h) => {
-  const {id} = request.param;
+  const {id} = request.params;
   const note = notes.filter((n) => n.id === id)[0];
 
   if (note != undefined) {
